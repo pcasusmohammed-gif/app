@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MED-AUDIO PRO</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+</head>
+<body>
+    <div id="app-container">
+        
+        <div id="home-view" class="view">
+            <div class="header-center">
+                <span class="material-icons-round main-icon">local_hospital</span>
+                <h1>ATLAS CLINIQUE</h1>
+                <p>SÉLECTIONNER LE SYSTÈME D'EXAMEN</p>
+            </div>
+
+            <div class="category-btn" onclick="switchToList('C')">
+                <span class="material-icons-round icon-red">favorite</span>
+                <div class="category-text">
+                    <h2>EXAMEN CARDIAQUE</h2>
+                    <p>Valves & Souffles</p>
+                </div>
+            </div>
+
+            <div class="category-btn" onclick="switchToList('P')">
+                <span class="material-icons-round icon-blue">air</span>
+                <div class="category-text">
+                    <h2>EXAMEN PULMONAIRE</h2>
+                    <p>Bruits respiratoires & surajoutés</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="list-view" class="view hidden">
+            <div class="list-header">
+                <button class="icon-btn" onclick="switchToHome()">
+                    <span class="material-icons-round">arrow_back</span>
+                </button>
+                <h2 id="list-title">BRUITS CARDIAQUES</h2>
+            </div>
+            
+            <div id="list-container">
+                </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

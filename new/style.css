@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #E2E8F0; /* Darker background for the body */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#app-container {
+    background-color: #F8FAFC;
+    width: 100%;
+    max-width: 400px;
+    height: 100vh;
+    max-height: 850px;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.view {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Home Screen Styles */
+.header-center {
+    text-align: center;
+    margin: 40px 0 30px;
+}
+
+.main-icon {
+    font-size: 50px;
+    color: #1D4ED8; /* BLUE_700 */
+}
+
+.header-center h1 {
+    color: #1E3A8A; /* BLUE_900 */
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.header-center p {
+    color: #4B5563; /* GREY_600 */
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.category-btn {
+    background: white;
+    border: 1px solid #EDF2F7;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.category-btn:hover {
+    background: #F1F5F9;
+}
+
+.icon-red { color: #EF4444; font-size: 30px; }
+.icon-blue { color: #3B82F6; font-size: 30px; }
+
+.category-text h2 {
+    font-size: 16px;
+    color: black;
+}
+
+.category-text p {
+    font-size: 12px;
+    color: grey;
+    margin-top: 4px;
+}
+
+/* List Screen Styles */
+.list-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.list-header h2 {
+    color: #1E3A8A;
+    font-size: 20px;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    color: #1E3A8A;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Card Styles */
+.card {
+    background: white;
+    border: 1px solid #E2E8F0;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.card-header h3 {
+    color: #1E3A8A;
+    font-size: 16px;
+}
+
+.badge {
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+.card hr {
+    border: none;
+    border-top: 1px solid #EDF2F7;
+    margin: 4px 0;
+}
+
+.desc {
+    color: #1F2937; /* GREY_800 */
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.play-btn {
+    background-color: #DBEAFE; /* BLUE_100 */
+    color: #1E3A8A; /* BLUE_900 */
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    transition: background 0.2s;
+    margin-top: 5px;
+}
+
+.play-btn:hover {
+    background-color: #BFDBFE;
+}
